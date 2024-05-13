@@ -22,7 +22,7 @@ function Episodes(){
                     data.results
                 )
                 setInfo(data.info)
-                console.log(data)
+                
             })
             .catch(error =>console.log(error))
     
@@ -65,13 +65,12 @@ function Episodes(){
    
      
 
-    console.log(episodes)
     
       return(
           <div className="flex flex-col items-center" >
             <h1 class=" text-3xl  ">Episodes</h1>
             <ul class="mt-6 lg:w-[30vw]"> 
-                {episodes == false && <p>Cargando...</p>}
+                {episodes === false && <p>Cargando...</p>}
                 {
 
                     episodes.map((episodes,i)=>{
