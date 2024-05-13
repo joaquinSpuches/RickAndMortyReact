@@ -13,7 +13,7 @@ function App() {
     
     <div  className="App"> 
     <header className="App-header">
-        <NavBar className='NavBar' enlaces= {['Home','Episodes','Characters','Info']} />
+        <NavBar className='NavBar' enlaces= {['Home','Episodes','Characters']} />
     </header>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
@@ -21,7 +21,7 @@ function App() {
           <Route path='/Episodes' element={<Episodes/>}/>
           <Route path='/Episodes/:param' element={<Episode/>}/>
           <Route path='/Characters' element={<Characters/>}/>
-          <Route path='/Info' element={<Info/>}/>
+         
         </Routes>               
     </div>
   );
