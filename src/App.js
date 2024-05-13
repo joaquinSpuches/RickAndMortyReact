@@ -2,28 +2,26 @@ import logo from './rick.svg';
 import './App.css';
 import {Route,Link, Routes} from 'react-router-dom' 
 import NavBar from './components/navBar';
-import Contador from './components/contador'
-import EpisodeList from './components/episodeList';
 import Episodes from './components/episodes';
 import Episode from './components/episode';
 import Home from './components/home';
 import Info from './components/info';
-import Fandom from './components/fandom';
+import Characters from './components/characters';
 
 function App() {
   return (
     
-    <div className="App"> 
+    <div  className="App"> 
     <header className="App-header">
-        <NavBar className='NavBar' enlaces= {['Home','Episodes','Fandom','Info']} />
+        <NavBar className='NavBar' enlaces= {['Home','Episodes','Characters','Info']} />
     </header>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
           <Route path='/Home' element={<Home/>}/>
           <Route path='/Episodes' element={<Episodes/>}/>
-          <Route path='/Episodes/:episode' element={<Episode/>}/>
-         {/*  <Route path='/Fandom' element={<Fandom/>}/>
-          <Route path='/Info' element={<Info/>}/> */}
+          <Route path='/Episodes/:param' element={<Episode/>}/>
+          <Route path='/Characters' element={<Characters/>}/>
+          <Route path='/Info' element={<Info/>}/>
         </Routes>               
     </div>
   );

@@ -14,7 +14,7 @@ class navBar extends Component {
             <ul className="enlaces">
                 {this.props.enlaces.map((link,i) =>{ 
                     
-                    
+                    // I dont know why i complicate myself that much, i could just use css hover
                     
                     return (
                         <li  key={link + i}> 

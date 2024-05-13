@@ -1,9 +1,10 @@
 {
-  "homepage": "http://joaquinSpuches.github.io/RickAndMortyReact",
+  "homepage": "http://joaquinSpuches.github.io/",
   "name": "test-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@midudev/tailwind-animations": "^0.0.7",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
   }
 }

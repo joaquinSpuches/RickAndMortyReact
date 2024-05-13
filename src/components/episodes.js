@@ -9,7 +9,10 @@ import '../App.css'
 function Episodes(){
     const [episodes, setEpisodes] = useState([]);
   
-    
+     
+
+
+
     useEffect(()=>{
     
         fetch('https://rickandmortyapi.com/api/episode')  
@@ -34,11 +37,14 @@ function Episodes(){
             <ul> 
                 {episodes == false && <p>Cargando...</p>}
                 {
+
                     episodes.map((episodes,i)=>{
+                      const characters = episodes.characters
+                      console.log(characters);
                         return( 
                       <li key={i}>
                          
-                        <Link to= {episodes.name}>{episodes.name}  </Link>
+                        <Link to={episodes.name}  >{episodes.name}  </Link>
                       </li>  
                       )     
                     })
